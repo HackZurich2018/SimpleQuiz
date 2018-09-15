@@ -1,10 +1,10 @@
-<h1 class="math-title">Math: Exercise 2</h1>
+<h1 class="math-title">Let's Do Some Math</h1>
 <div class="math-quiz" style="text-align:center">
-  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  <form>
     <div class="form-group">
       <label for="intermediateMathQuestion">What is the result of 10 * 13</label>
-      <input type="number" class="form-control" id="intermediateMathQuestion" required [(ngModel)]="model.intermediateMathQuestion" name=name #name="ngModel">
+      <input type="number" class="form-control" id="intermediateMathQuestion">
     </div>
-    <a href="/memoryQuiz" type="submit" class="btn btn-success math-button">Submit</a>
+    <a href="/thirdMathQuiz" type="submit" class="btn btn-success math-button">Submit</a>
   </form>
 </div>
