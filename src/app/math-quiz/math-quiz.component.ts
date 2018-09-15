@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MathModel} from './MathModel';
-import {ResultMathModel} from './ResultMathModel';
+import { MathModel } from './MathModel';
+import { ResultMathModel } from './ResultMathModel';
 
 @Component({
   selector: 'app-math-quiz',
