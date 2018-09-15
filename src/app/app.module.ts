@@ -5,16 +5,22 @@ import { AppComponent } from './app.component';
 import { MathQuizComponent } from './math-quiz/math-quiz.component';
 import { MemoryQuizComponent } from './memory-quiz/memory-quiz.component';
 import { SentenceQuizComponent } from './sentence-quiz/sentence-quiz.component';
+import { AppRoutingModule } from './app-routing.module';
+import {FormsModule} from '@angular/forms';
+import { DashBoardComponent } from './dash-board/dash-board.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     MathQuizComponent,
     MemoryQuizComponent,
-    SentenceQuizComponent
-  ],
-  imports: [
-    BrowserModule
+    SentenceQuizComponent,
+    DashBoardComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
