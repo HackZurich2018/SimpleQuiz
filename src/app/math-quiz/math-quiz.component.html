@@ -8,7 +8,7 @@
       <label for="simpleMathQuestion">What is the result of 1 + 1</label>
       <input type="number" class="form-control" id="simpleMathQuestion"
              required
-             [(ngModel)]="model.simpleMathQuestion" simpleMathQuestion="name"
+             [(ngModel)]="model.simpleMathQuestion" name="name"
              #name="ngModel">
     </div>
 
@@ -16,7 +16,7 @@
       <label for="intermediateMathQuestion">What is the result of 10 * 13</label>
       <input type="number" class="form-control" id="intermediateMathQuestion"
              required
-             [(ngModel)]="model.intermediateMathQuestion" intermediateMathQuestion=0
+             [(ngModel)]="model.intermediateMathQuestion" name=name
              #name="ngModel">
     </div>
 
@@ -24,12 +24,12 @@
       <label for="advancedMathQuestion">What is the result of 10 % 13</label>
       <input type="number" class="form-control" id="advancedMathQuestion"
              required
-             [(ngModel)]="model.advancedMathQuestion" simpleMathQuestion="name"
+             [(ngModel)]="model.advancedMathQuestion" name="name"
              #name="ngModel">
     </div>
 
     <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
-    <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
+  <!--  <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>-->
 
   </form>
 </div>
