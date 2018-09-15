@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemoryQuizComponent implements OnInit {
   private cards: Card[];
-  constructor() {}
+  public counter: number;
+  constructor() {
+    this.counter = 0;
+  }
 
   private initCards(): Card[] {
     const cardElements = document.getElementsByClassName(
       'card'
     ) as HTMLCollectionOf<HTMLDivElement>;
     return Array.from(cardElements).map(el => new Card(el));
+  }
+
+  public increaseCounter() {
+    this.counter += 1;
   }
   ngOnInit() {
     this.cards = this.initCards();
