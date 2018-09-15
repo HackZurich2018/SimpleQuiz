@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { DashBoardComponent } from './dash-board/dash-board.component';
 import { BlackScreenComponent } from './black-screen/black-screen.component';
+import { ThirdMathQuizComponent } from './third-math-quiz/third-math-quiz.component';
+import { SecondMathQuizComponent } from './second-math-quiz/second-math-quiz.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -18,7 +20,9 @@ import { BlackScreenComponent } from './black-screen/black-screen.component';
     MemoryQuizComponent,
     SentenceQuizComponent,
     DashBoardComponent,
-    BlackScreenComponent
+    BlackScreenComponent,
+    ThirdMathQuizComponent,
+    SecondMathQuizComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
