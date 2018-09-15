@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MathQuizComponent } from './math-quiz/math-quiz.component';
+import { SecondMathQuizComponent } from './second-math-quiz/second-math-quiz.component';
 import { MemoryQuizComponent } from './memory-quiz/memory-quiz.component';
 import { SentenceQuizComponent } from './sentence-quiz/sentence-quiz.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,7 @@ import { BlackScreenComponent } from './black-screen/black-screen.component';
   declarations: [
     AppComponent,
     MathQuizComponent,
+    SecondMathQuizComponent,
     MemoryQuizComponent,
     SentenceQuizComponent,
     DashBoardComponent,
