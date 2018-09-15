@@ -1,35 +1,22 @@
-<div style="text-align:center">
-  <p>
-  Welcome to the Math Quiz. Are you able to solve the questions ?
-</p>
-
+<h1 class="math-title">Let's Do Some Math</h1>
+<div class="math-quiz" style="text-align:center">
   <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
     <div class="form-group">
       <label for="simpleMathQuestion">What is the result of 1 + 1</label>
-      <input type="number" class="form-control" id="simpleMathQuestion"
-             required
-             [(ngModel)]="model.simpleMathQuestion" name="name"
-             #name="ngModel">
+      <input type="number" class="form-control" id="simpleMathQuestion" required [(ngModel)]="model.simpleMathQuestion" name="name" #name="ngModel">
     </div>
 
     <div class="form-group">
       <label for="intermediateMathQuestion">What is the result of 10 * 13</label>
-      <input type="number" class="form-control" id="intermediateMathQuestion"
-             required
-             [(ngModel)]="model.intermediateMathQuestion" name=name
-             #name="ngModel">
+      <input type="number" class="form-control" id="intermediateMathQuestion" required [(ngModel)]="model.intermediateMathQuestion" name=name #name="ngModel">
     </div>
 
     <div class="form-group">
-      <label for="advancedMathQuestion">What is the result of 10 % 13</label>
-      <input type="number" class="form-control" id="advancedMathQuestion"
-             required
-             [(ngModel)]="model.advancedMathQuestion" name="name"
-             #name="ngModel">
+      <label for="advancedMathQuestion">What is the result of 15 % 4</label>
+      <input type="number" class="form-control" id="advancedMathQuestion" required [(ngModel)]="model.advancedMathQuestion" name="name" #name="ngModel">
     </div>
 
-    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
-  <!--  <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>-->
+    <a href="/memoryQuiz" type="submit" class="btn btn-success math-button">Submit</a>
 
   </form>
 </div>

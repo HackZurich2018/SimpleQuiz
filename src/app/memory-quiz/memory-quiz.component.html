@@ -1,7 +1,11 @@
 <h1 class="memory-title">Let's play Memory</h1>
 <div class="game-field">
-  <div class="card card-hidden"><img src="assets/images/cards/1.jpeg"></div>
-  <div class="card card-hidden"><img src="assets/images/cards/0.png"></div>
-  <div class="card card-hidden"><img src="assets/images/cards/0.png"></div>
-  <div class="card card-hidden"><img src="assets/images/cards/1.jpeg"></div>
+  <div class="card card-hidden" (click)="increaseCounter()"><img src="assets/images/cards/1.jpeg"></div>
+  <div class="card card-hidden" (click)="increaseCounter()"><img src="assets/images/cards/0.png"></div>
+  <div class="card card-hidden" (click)="increaseCounter()"><img src="assets/images/cards/0.png"></div>
+  <div class="card card-hidden" (click)="increaseCounter()"><img src="assets/images/cards/1.jpeg"></div>
+
+  <div *ngIf="counter > 3">
+    <a href="/blackScreen" type="submit" class="btn btn-primary memory-button">Success</a>
+  </div>
 </div>
