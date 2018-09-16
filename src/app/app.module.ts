@@ -11,6 +11,7 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
 import { BlackScreenComponent } from './black-screen/black-screen.component';
 import { ThirdMathQuizComponent } from './third-math-quiz/third-math-quiz.component';
 import { SecondMathQuizComponent } from './second-math-quiz/second-math-quiz.component';
+import { SecondSentenceQuizComponent } from './second-sentence-quiz/second-sentence-quiz.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -22,7 +23,8 @@ import { SecondMathQuizComponent } from './second-math-quiz/second-math-quiz.com
     DashBoardComponent,
     BlackScreenComponent,
     ThirdMathQuizComponent,
-    SecondMathQuizComponent
+    SecondMathQuizComponent,
+    SecondSentenceQuizComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
