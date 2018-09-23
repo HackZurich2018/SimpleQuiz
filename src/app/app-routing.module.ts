@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'thirdMathQuiz', component: ThirdMathQuizComponent },
   { path: 'sentenceQuiz', component: SentenceQuizComponent },
   { path: 'secondSentenceQuiz', component: SecondSentenceQuizComponent },
-  { path: 'memoryQuiz', component: MemoryQuizComponent }
+  { path: 'memoryQuiz', component: MemoryQuizComponent },
   { path: 'blackScreen', component: BlackScreenComponent }
 ];
 
